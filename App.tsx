@@ -11,14 +11,12 @@
 import React from 'react';
 import {
   SafeAreaView,
-  ScrollView,
   StatusBar,
   StyleSheet,
-  Text,
   useColorScheme,
-  View,
 } from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
+import HomePage from './src/page/HomePage';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -28,28 +26,18 @@ const App = () => {
   };
 
   return (
-    <SafeAreaView style={backgroundStyle}>
+    <SafeAreaView style={[backgroundStyle, styles.root]}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+      <HomePage />
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
+  root: {
+    flex: 1,
+    width: '100%',
+    height: '100%',
   },
 });
 

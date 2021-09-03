@@ -2,6 +2,7 @@ import React, {useRef, useEffect, useCallback} from 'react';
 import {TextInput, TextInputProps, Text} from 'react-native';
 import {useField} from '@unform/core';
 import styles from './styles';
+import {SearchBar} from 'react-native-elements';
 
 interface InputProps extends TextInputProps {
   name: string;
@@ -45,7 +46,7 @@ export default function Input({name, onChangeText, ...rest}: InputProps) {
     [onChangeText],
   );
   return (
-    <TextInput
+    <SearchBar
       style={styles.container}
       ref={inputRef}
       onChangeText={handleChangeText}

@@ -5,8 +5,8 @@ import Snow from '../assets/Weather/Snow/snow.png';
 import Thunderstorm from '../assets/Weather/Thunderstorm/thunderstorm.png';
 import Wind from '../assets/Weather/Wind/wind.jpg';
 
-export default function weatherBackgroundImg(mainId: string) {
-  switch (mainId) {
+export default function weatherBackgroundImg(main: string) {
+  switch (main) {
     case 'Clear':
       return Clear;
     case 'Clouds':

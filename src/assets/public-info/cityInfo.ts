@@ -1019,7 +1019,7 @@ export default [
   },
   {
     id: 4400423,
-    name: 'New London',
+    name: 'London',
     state: 'MO',
     country: 'US',
     coord: {
@@ -1135,6 +1135,36 @@ export default [
     coord: {
       lon: 141.346603,
       lat: 43.06451,
+    },
+  },
+  {
+    id: 3425505,
+    name: 'Greenland',
+    state: '',
+    country: 'GL',
+    coord: {
+      lon: -40.0,
+      lat: 72.0,
+    },
+  },
+  {
+    id: 2629691,
+    name: 'Iceland',
+    state: '',
+    country: 'IS',
+    coord: {
+      lon: -18.0,
+      lat: 65.0,
+    },
+  },
+  {
+    id: 6091530,
+    name: 'Nova Scotia',
+    state: '',
+    country: 'CA',
+    coord: {
+      lon: -62.99865,
+      lat: 45.000149,
     },
   },
 ];

@@ -16,6 +16,8 @@ import {
   useColorScheme,
 } from 'react-native';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
+import {NavigationContainer} from '@react-navigation/native';
+// import Routes from './src/components/router';
 import HomePage from './src/page/HomePage';
 
 const App = () => {
@@ -28,14 +30,15 @@ const App = () => {
   return (
     <SafeAreaView style={[backgroundStyle, styles.root]}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
+      {/* <NavigationContainer> */}
       <HomePage />
+      {/* </NavigationContainer> */}
     </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
   root: {
-    flex: 1,
     width: '100%',
     height: '100%',
   },

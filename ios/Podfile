@@ -12,6 +12,8 @@ target 'Weather' do
     :hermes_enabled => false
   )
 
+  pod 'react-native-blur', :path => '../node_modules/@react-native-community/blur'
+
   target 'WeatherTests' do
     inherit! :complete
     # Pods for testing

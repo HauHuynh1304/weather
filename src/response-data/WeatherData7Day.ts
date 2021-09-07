@@ -19,4 +19,3 @@ export default interface WeatherData7Day {
     },
   ];
 }
-// https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=current,minutely,hourly,alerts&appid=73d58275edbd699efb062e9827aae136
